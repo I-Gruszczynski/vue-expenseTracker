@@ -1,0 +1,247 @@
+body {
+  background-color: #02131a;
+  display: flex;
+  flex-direction: column;
+  margin: 50px 100px;
+  font-family: "Lato", sans-serif;
+  font-size: 18px;
+}
+h1,
+h2,
+h3,
+h4,
+p {
+  color: #fff;
+  margin-bottom: 10px;
+}
+h2 {
+  font-size: 24px;
+
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+
+.balance {
+  width: 40%;
+  float: left;
+}
+.income,
+.expense {
+  width: 30%;
+  float: left;
+}
+.money-plus {
+  color: #2ecc71;
+}
+.money-minus {
+  color: #c0392b;
+}
+.filter > ul > li {
+  display: inline-block;
+}
+.filter > ul > li > button {
+  display: inline-block;
+  margin-right: 10px;
+  cursor: pointer;
+  color: #fff;
+  background-color: transparent;
+  padding: 12.5px 25px;
+  border: 2px solid #fff;
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+.filter > ul > li:hover > button,
+.filter > ul > li.active > button {
+  color: #492ad4;
+  border: 2px solid #492ad4;
+}
+.filter > ul {
+  padding-left: 0px;
+  width: 80%;
+  float: left;
+}
+.filter-button {
+  width: 20%;
+  float: left;
+  text-align: right;
+}
+.filter-button > button {
+  border-radius: 15px;
+  background-color: #492ad4;
+  color: #fff;
+  border: 2px solid #492ad4;
+  padding: 12.5px 25px;
+  font-weight: 600;
+  font-size: 12px;
+  margin: 10px 0px;
+  text-transform: uppercase;
+}
+.delete-btn {
+  cursor: pointer;
+  background-color: #e74c3c;
+  border: 0;
+  color: #fff;
+  font-size: 20px;
+  line-height: 20px;
+  padding: 2px 5px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(-100%, -50%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.list {
+  list-style-type: none;
+  padding: 0;
+  margin-bottom: 40px;
+  width: 100%;
+}
+
+.list li {
+  background-color: transparent;
+  color: #fff;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  padding: 20px 20px;
+  width: auto;
+  margin: 10px 0px;
+}
+.list li > p {
+  font-size: 28px;
+  margin: 0px;
+}
+
+.list li.plus > p {
+  color: #2ecc71;
+}
+
+.list li.minus > p {
+  color: #c0392b;
+}
+
+.modal-addTransaction {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+.modal-content {
+  background: #02131a;
+  padding: 20px;
+  border-radius: 10px;
+  min-width: auto;
+  width: 500px;
+  position: relative;
+  border-radius: 20px;
+}
+.modal-content-close-btn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: #666;
+}
+hr {
+  color: #492ad4;
+}
+.addTransaction {
+  margin: 20px;
+  color: #fff;
+}
+.addTransaction > h3 {
+  margin: 0px 0px 20px 0px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.addTransaction-type {
+  width: 100%;
+  background-color: #010a0e;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+.addTransaction-type-income,
+.addTransaction-type-expense {
+  width: 50%;
+  float: left;
+  text-align: center;
+  padding: 12.5px 0px;
+  cursor: pointer;
+}
+.addTransaction-productHeader {
+  margin-bottom: 0px;
+}
+.addTransaction-product {
+  margin-top: 0px;
+  width: 100%;
+  height: 100px;
+}
+.addTransaction-product-food,
+.addTransaction-product-transport,
+.addTransaction-product-services,
+.addTransaction-product-clothing,
+.addTransaction-product-others {
+  width: 15%;
+  margin: 2%;
+  float: left;
+  text-align: center;
+  padding: 12.5px 0px;
+
+  cursor: pointer;
+  font-size: 12px;
+  border-radius: 100px;
+}
+.addTransaction-product-food-icon {
+  border: 1px solid #66eb5e;
+  padding: 14px 10px;
+  border-radius: 20px;
+  margin-bottom: 10px;
+}
+.addTransaction-product-transport-icon {
+  border: 1px solid #103bdc;
+  padding: 14px 10px;
+  border-radius: 20px;
+  margin-bottom: 10px;
+}
+.addTransaction-product-services-icon {
+  border: 1px solid #d7e72c;
+  padding: 14px 10px;
+  border-radius: 20px;
+  margin-bottom: 10px;
+}
+.addTransaction-product-clothing-icon {
+  border: 1px solid #f51313;
+  padding: 14px 10px;
+  border-radius: 20px;
+  margin-bottom: 10px;
+}
+.addTransaction-product-others-icon {
+  border: 1px solid #fa00f0;
+  padding: 14px 10px;
+  border-radius: 20px;
+  margin-bottom: 10px;
+}
+.form-control > input {
+  width: 95%;
+  height: 25px;
+  padding: 12.5px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  background-color: transparent;
+  color: #fff;
+}
