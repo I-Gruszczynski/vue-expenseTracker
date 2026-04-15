@@ -6,7 +6,13 @@
       :key="transaction.id"
       :class="transaction.amount < 0 ? 'minus' : 'plus'"
     >
-      {{ transaction.text }}
+      <div class="transaction-info">
+        <p>{{ transaction.text }}</p>
+
+        <p :class="productClass[transaction.product]">
+          {{ transaction.product }}
+        </p>
+      </div>
       <p>${{ transaction.amount }}</p>
       <button class="delete-btn" @click="deleteTransaction(transaction.id)">
         x
@@ -45,4 +51,30 @@ const emit = defineEmits(["transactionDeleted"]);
 const deleteTransaction = (id) => {
   emit("transactionDeleted", id);
 };
+
+const productClass = {
+  food: "product-food",
+  transport: "product-transport",
+  services: "product-services",
+  clothing: "product-clothes",
+  others: "product-others",
+};
 </script>
+
+<style scoped>
+.product-food {
+  color: #66eb5e;
+}
+.product-transport {
+  color: #103bdc;
+}
+.product-services {
+  color: #d7e72c;
+}
+.product-clothes {
+  color: #f51313;
+}
+.product-others {
+  color: #fa00f0;
+}
+</style>

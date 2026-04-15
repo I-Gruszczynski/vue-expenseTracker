@@ -124,6 +124,10 @@ h2 {
 .list li.minus > p {
   color: #c0392b;
 }
+.transaction-info > p:first-child {
+  font-size: 24px;
+  margin: 0px;
+}
 
 .modal-addTransaction {
   position: fixed;
@@ -183,6 +187,15 @@ hr {
   padding: 12.5px 0px;
   cursor: pointer;
 }
+.addTransaction-type-income.active,
+.addTransaction-type-expense.active {
+  background-color: #492ad4;
+  color: #fff;
+}
+.addTransaction-type-income:hover:not(.active),
+.addTransaction-type-expense:hover:not(.active) {
+  background-color: #333; /* Jaśniejsze szare tło */
+}
 .addTransaction-productHeader {
   margin-bottom: 0px;
 }
@@ -201,7 +214,6 @@ hr {
   float: left;
   text-align: center;
   padding: 12.5px 0px;
-
   cursor: pointer;
   font-size: 12px;
   border-radius: 100px;
@@ -212,11 +224,19 @@ hr {
   border-radius: 20px;
   margin-bottom: 10px;
 }
+.addTransaction-product-food-icon.active {
+  background-color: #66eb5e;
+  border: 1px solid #fff;
+}
 .addTransaction-product-transport-icon {
   border: 1px solid #103bdc;
   padding: 14px 10px;
   border-radius: 20px;
   margin-bottom: 10px;
+}
+.addTransaction-product-transport-icon.active {
+  background-color: #103bdc;
+  border: 1px solid #fff;
 }
 .addTransaction-product-services-icon {
   border: 1px solid #d7e72c;
@@ -224,17 +244,29 @@ hr {
   border-radius: 20px;
   margin-bottom: 10px;
 }
+.addTransaction-product-services-icon.active {
+  background-color: #d7e72c;
+  border: 1px solid #fff;
+}
 .addTransaction-product-clothing-icon {
   border: 1px solid #f51313;
   padding: 14px 10px;
   border-radius: 20px;
   margin-bottom: 10px;
 }
+.addTransaction-product-clothing-icon.active {
+  background-color: #f51313;
+  border: 1px solid #fff;
+}
 .addTransaction-product-others-icon {
   border: 1px solid #fa00f0;
   padding: 14px 10px;
   border-radius: 20px;
   margin-bottom: 10px;
+}
+.addTransaction-product-others-icon.active {
+  background-color: #fa00f0;
+  border: 1px solid #fff;
 }
 .form-control > input {
   width: 95%;
@@ -244,4 +276,25 @@ hr {
   border: 1px solid #ddd;
   background-color: transparent;
   color: #fff;
+}
+.form-control > input:focus {
+  border-color: #492ad4;
+  outline: none;
+}
+.addTransaction-btn {
+  width: 100%;
+  padding: 12.5px;
+  background-color: #492ad4;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 16px;
+  text-transform: uppercase;
+  cursor: pointer;
+  height: 60px;
+}
+.addTransaction-btn:hover {
+  background-color: #3a1dbd;
+  cursor: pointer;
 }
