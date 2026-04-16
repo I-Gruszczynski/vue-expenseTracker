@@ -363,4 +363,21 @@ hr {
   .list li > p {
     font-size: 24px;
   }
+  .addTransaction-product-food-icon,
+  .addTransaction-product-transport-icon,
+  .addTransaction-product-services-icon,
+  .addTransaction-product-clothing-icon,
+  .addTransaction-product-others-icon {
+    padding: 10px 5px;
+    border-radius: 20px;
+    margin-bottom: 10px;
+  }
+  .food-icon,
+  .transport-icon,
+  .services-icon,
+  .clothing-icon,
+  .others-icon {
+    width: 24px;
+    height: 24px;
+  }
 }

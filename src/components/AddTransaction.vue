@@ -34,6 +34,7 @@
                 icon="mdi:food"
                 width="40"
                 height="40"
+                class="food-icon"
                 :style="{ color: productType === 'Food' ? '#fff' : '#66eb5e' }"
               />
             </div>
@@ -49,6 +50,7 @@
                 icon="mdi:car"
                 width="40"
                 height="40"
+                class="transport-icon"
                 :style="{
                   color: productType === 'Transport' ? '#fff' : '#103bdc',
                 }"
@@ -66,6 +68,7 @@
                 icon="ri:service-line"
                 width="40"
                 height="40"
+                class="services-icon"
                 :style="{
                   color: productType === 'Services' ? '#fff' : '#d7e72c',
                 }"
@@ -83,6 +86,7 @@
                 icon="lsicon:clothes-filled"
                 width="40"
                 height="40"
+                class="clothing-icon"
                 :style="{
                   color: productType === 'Clothing' ? '#fff' : '#f51313',
                 }"
@@ -100,6 +104,7 @@
                 icon="mdi:help-circle"
                 width="40"
                 height="40"
+                class="others-icon"
                 :style="{
                   color: productType === 'Others' ? '#fff' : '#fa00f0',
                 }"
