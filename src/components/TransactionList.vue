@@ -53,11 +53,11 @@ const deleteTransaction = (id) => {
 };
 
 const productClass = {
-  food: "product-food",
-  transport: "product-transport",
-  services: "product-services",
-  clothing: "product-clothes",
-  others: "product-others",
+  Food: "product-food",
+  Transport: "product-transport",
+  Services: "product-services",
+  Clothing: "product-clothes",
+  Others: "product-others",
 };
 </script>
 
@@ -66,7 +66,7 @@ const productClass = {
   color: #66eb5e;
 }
 .product-transport {
-  color: #103bdc;
+  color: #3e62e4;
 }
 .product-services {
   color: #d7e72c;

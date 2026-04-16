@@ -140,7 +140,7 @@ const text = ref("");
 const amount = ref("");
 
 const transactionType = ref("expense");
-const productType = ref("others");
+const productType = ref("Others");
 
 // Get toast interface
 const toast = useToast();
