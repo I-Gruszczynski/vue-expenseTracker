@@ -314,3 +314,44 @@ hr {
   background-color: #3a1dbd;
   cursor: pointer;
 }
+@media screen and (max-width: 768px) {
+  body {
+    margin: 20px;
+  }
+  .filter {
+    width: 100%;
+    float: l;
+    margin: 0px;
+    padding: 0px;
+  }
+  .filter > ul {
+    width: 70%;
+    float: left;
+    margin: 20px 0px;
+    text-align: center;
+  }
+  .filter > ul > li > button {
+    font-size: 10px;
+  }
+  .filter-button {
+    width: auto;
+    float: left;
+    text-align: center;
+  }
+  .list {
+    width: 100%;
+  }
+  .delete-btn {
+    top: 0px;
+    right: 0px;
+  }
+  .transaction-info > p:first-child {
+    font-size: 16px;
+  }
+  .transaction-info > p {
+    font-size: 10px;
+  }
+  .list li > p {
+    font-size: 24px;
+  }
+}

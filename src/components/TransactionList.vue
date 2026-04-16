@@ -13,9 +13,9 @@
           {{ transaction.product }}
         </p>
       </div>
-      <p>${{ transaction.amount }}</p>
+      <p>{{ transaction.amount }}zł</p>
       <button class="delete-btn" @click="deleteTransaction(transaction.id)">
-        x
+        <Icon icon="boxicons:trash" width="36" height="36" />
       </button>
     </li>
   </ul>
@@ -24,6 +24,7 @@
 <script setup>
 import { computed } from "vue";
 import { defineProps } from "vue";
+import { Icon } from "@iconify/vue";
 
 const props = defineProps({
   transactions: {
